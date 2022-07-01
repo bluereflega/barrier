@@ -1,4 +1,4 @@
-package io.github.bluereflega.barrier;
+package io.github.bluereflega.barrier.item.custom;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -17,6 +17,8 @@ public class BarrierItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
         playerEntity.playSound(SoundEvents.BLOCK_WOOL_BREAK, 1.0F, 1.0F);
+        playerEntity.getItemCooldownManager().set(this, 30);
+
         return TypedActionResult.success(playerEntity.getStackInHand(hand));
     }
 }
