@@ -1,9 +1,9 @@
-# Fabric Example Mod
+# Barrier Mod
 
-## Setup
+A recreation of Aqua's Barrier from the Kingdom Hearts games.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+This is my first Minecraft mod, so don't expect anything remotely clean.
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod is licensed under the [MIT license](https://github.com/bluereflega/fabric-mod/blob/1.19/LICENSE).
