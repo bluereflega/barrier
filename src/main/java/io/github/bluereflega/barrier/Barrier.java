@@ -1,8 +1,11 @@
 package io.github.bluereflega.barrier;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.slf4j.Logger;
@@ -14,7 +17,15 @@ public class Barrier implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("Barrier");
 
-	public static final BarrierItem BARRIER_ITEM = new BarrierItem(new FabricItemSettings().group(ItemGroup.MISC));
+	public static final BarrierItem BARRIER_ITEM = new BarrierItem(new FabricItemSettings().group(ItemGroup.MISC).maxCount(1));
+
+	public static final ItemGroup BARRIER_GROUP = FabricItemGroupBuilder.create(
+			new Identifier("barrier", "barrier"))
+			.icon(() -> new ItemStack(BARRIER_ITEM))
+			.appendItems(stacks -> {
+				stacks.add(new ItemStack(BARRIER_ITEM));
+			})
+			.build();
 
 	@Override
 	public void onInitialize() {
