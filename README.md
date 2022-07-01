@@ -6,4 +6,4 @@ This is my first Minecraft mod, so don't expect anything remotely clean.
 
 ## License
 
-This mod is licensed under the [MIT license](https://github.com/bluereflega/fabric-mod/blob/1.19/LICENSE).
+This mod is licensed under the [MIT license](https://github.com/bluereflega/barrier/blob/1.19/LICENSE).
