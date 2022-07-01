@@ -15,7 +15,7 @@ public class ExampleMod implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 
-	public static final Item BARRIER_ITEM = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+	public static final BarrierItem BARRIER_ITEM = new BarrierItem(new FabricItemSettings().group(ItemGroup.MISC));
 
 	@Override
 	public void onInitialize() {
