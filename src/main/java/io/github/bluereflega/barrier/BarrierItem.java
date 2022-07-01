@@ -1,4 +1,4 @@
-package net.fabricmc.example;
+package io.github.bluereflega.barrier;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;

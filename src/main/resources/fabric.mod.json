@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "fabric_mod",
+  "id": "barrier",
   "version": "${version}",
 
   "name": "Fabric Mod",
@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.bluereflega.barrier.Barrier"
     ]
   },
   "mixins": [
-    "fabric_mod.mixins.json"
+    "barrier.mixins.json"
   ],
 
   "depends": {
