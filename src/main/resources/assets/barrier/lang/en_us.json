@@ -1,3 +1,5 @@
 {
-    "item.barrier.barrier": "§9Barrier"
+    "item.barrier.barrier": "§9Barrier",
+
+    "itemGroup.barrier.barrier_mod": "Barrier Mod"
 }
